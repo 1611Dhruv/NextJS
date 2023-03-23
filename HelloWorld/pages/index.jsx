@@ -1,30 +1,20 @@
-import { useState } from "react";
-
-function Header({title}){
-    return <h1>{title ? title: "Default Title"}</h1>;
-}
+import styles from '../styles/stylesheet.css';
 
 export default function HomePage(){
+  return <div> 
+    <h1>Home Page</h1>
+    <Name />
+  </div>
+}
 
-  const names = ['John', 'Jane', 'Mary'];
-  const [likes,setlikes] = useState(0);
-
-  function handleClick(){
-    setlikes(likes + 1);
-  }
+function Name(){
+  const arr = ['John', 'Jane', 'Mary', 'Mike', 'Bob'];
 
   return(
     <div>
-      <Header title="Develop. Preview. Ship. 🚀"/>
-      <Header/>
       <ul>
-        {names.map((name)=>(
-          <li key={name}>{name}</li>
-        ))}
+        {arr.map((name)=>(<li class={styles.style}>{name}</li>))}
       </ul>
-
-      <button onClick={handleClick}> Like ({likes})</button>
     </div>
   )
 }
-
