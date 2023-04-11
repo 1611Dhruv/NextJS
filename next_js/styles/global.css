@@ -3,5 +3,21 @@
 @tailwind utilities;
 
 body {
-  background-color: green;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/108/704/1021/pokemon-charizard-anime-wallpaper-preview.jpg");
+  background-size: cover;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.pokeDisplay {
+  width: 400px;
+  padding: 2em;
+  background-color: beige;
 }
