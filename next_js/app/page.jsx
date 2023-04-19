@@ -1,3 +1,21 @@
+"use client";
+import Pause from "./pause.jsx";
+import { useState } from "react";
+
 export default function Home() {
-  return <h1>Hi</h1>;
+  const [gamePause, setGamePause] = useState(false);
+  function handleClick(e) {
+    setGamePause(!gamePause);
+  }
+
+  window.addEventListener("keydown", handleClick);
+  return (
+    <div>
+      {gamePause ? (
+        <Pause continue={handleClick} exit={window.close} />
+      ) : (
+        <h1>Game Continues</h1>
+      )}
+    </div>
+  );
 }

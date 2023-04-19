@@ -1,7 +1,7 @@
 import "./global.css";
 import Link from "next/link";
 
-export default function HomeLayout() {
+export default function HomeLayout({ children }) {
   return (
     <html>
       <body>
@@ -22,6 +22,7 @@ export default function HomeLayout() {
             </Link>
           </div>
         </nav>
+        {children}
       </body>
     </html>
   );
