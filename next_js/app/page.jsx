@@ -10,7 +10,7 @@ export default function Home() {
 
   window.addEventListener("keydown", handleClick);
   return (
-    <div>
+    <div id="content">
       {gamePause ? (
         <Pause continue={handleClick} exit={window.close} />
       ) : (
