@@ -4,7 +4,7 @@ export default function Node({ value }) {
   }
 
   return (
-    <div className="node">
+    <div className="node" id>
       <button onClick={(e) => incrementValue(e)}>{value}</button>
     </div>
   );
