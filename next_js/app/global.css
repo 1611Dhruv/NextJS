@@ -7,6 +7,26 @@ body {
   background-size: cover;
 }
 
+#center {
+  justify-self: center;
+}
+
+.bar {
+  width: 250px;
+  height: 50px;
+  display: flex;
+}
+
+.bar input[type="text"] {
+  width: 70%;
+  height: 100%;
+}
+.bar input[type="button"] {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(101, 76, 37, 0.6);
+}
+
 .main {
   width: 100vw;
   height: 100vh;
