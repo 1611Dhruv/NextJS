@@ -1,14 +1,11 @@
-import Movie from "./Movie.jsx";
+import Movie from "./Movie";
 
 export default async function Home() {
-  console.log(
-    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`
-  );
   const data = await fetch(
     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`
   );
   const res = await data.json();
-  console.log(res);
+  res.results.map((movie) => console.log(movie.title));
   return (
     <main>
       <div className="grid grid-cols-fluid gap-16">
