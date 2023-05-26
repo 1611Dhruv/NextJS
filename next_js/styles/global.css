@@ -46,11 +46,11 @@ body {
   border-radius: 1.5em;
 }
 
-.pokeDisplay .image {
+.pokeDisplay img {
   width: 100px;
   height: 100px;
 }
 
-.pokeDisplay .image:hover {
+.pokeDisplay img:hover {
   scale: 1.08;
 }
